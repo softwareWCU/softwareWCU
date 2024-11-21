@@ -1,0 +1,6 @@
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+
+public interface PersonalInfoService extends Remote {
+    boolean registerPersonalInfo(String name, String email, int age) throws RemoteException;
+}
